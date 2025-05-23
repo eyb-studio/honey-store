@@ -175,10 +175,10 @@ export default function CartPage() {
                 اطلب الآن عبر واتساب
               </Button>
 
-              <div className="mt-4 text-center text-sm text-muted-foreground">
+              {/* <div className="mt-4 text-center text-sm text-muted-foreground">
                 بالضغط على "اطلب الآن" فإنك توافق على شروط الخدمة وسياسة
                 الخصوصية
-              </div>
+              </div> */}
             </div>
           </Card>
         </div>

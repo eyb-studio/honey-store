@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer className="border-t bg-muted/40">
+    <footer id="footer" className="border-t bg-muted/40">
       <div className="container px-4 py-8 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -35,7 +35,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">تواصل معنا</h3>
             <address className="not-italic text-muted-foreground">
               <p>دبي، الإمارات العربية المتحدة</p>
-              <p className="mt-2">البريد الإلكتروني: info@honeynature.com</p>
+              <p className="mt-2">البريد الإلكتروني: healthyqualityplus@gmail.com</p>
               <p className="mt-2">الهاتف: <span dir="ltr" className="inline-block">+971 55 155 5546</span></p>
             </address>
           </div>

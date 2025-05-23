@@ -85,16 +85,12 @@ export default  function ProductPageClient({ product }: ProductPageProps) {
             </div>
           </div>
 
-          <div className="prose max-w-none ">
-            <Markdown>{product.description}</Markdown>
-          </div>
-
-          <div className="space-y-4">
+                    <div className="space-y-4">
             <h3 className="text-lg font-semibold">الكمية</h3>
             <CustomQuantitySelector initialQuantity={1} onChange={() => {}} />
           </div>
 
-          <div className="sticky bottom-0 left-0 right-0 bg-background pb-4 md:p-0 pt-4 z-50">
+          <div className="sticky md:relative w-full bottom-0 left-0 right-0 bg-background pb-4 md:p-0 pt-4 z-10">
             <AddToCartButton
               product={product}
               size="lg"
@@ -102,13 +98,21 @@ export default  function ProductPageClient({ product }: ProductPageProps) {
             />
           </div>
 
+          <div className="prose max-w-none ">
+            <Markdown>{product.description}</Markdown>
+          </div>
+
+          <div className="md:hidden">
+            <AddToCartButton
+                product={product}
+                size="lg"
+                className="w-full md:w-auto"
+                />
+          </div>
+
           <div className="border-t pt-6 mt-8">
             <h3 className="text-lg font-semibold mb-4">معلومات إضافية</h3>
             <ul className="space-y-2">
-              <li className="flex justify-between">
-                <span className="text-muted-foreground">الفئة:</span>
-                <span>{product.category}</span>
-              </li>
               <li className="flex justify-between">
                 <span className="text-muted-foreground">الوزن:</span>
                 <span>{product.weight} جرام</span>
@@ -121,6 +125,7 @@ export default  function ProductPageClient({ product }: ProductPageProps) {
           </div>
         </div>
       </div>
+
 
       {/* <section className="mt-16 mb-8">
         <h2 className="text-2xl font-bold mb-6">منتجات مشابهة</h2>

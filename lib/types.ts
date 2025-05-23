@@ -5,7 +5,6 @@ export interface Product {
   price: number
   discountedPrice?: number
   images: ImageType[]
-  category: string
   isOffer: boolean
   weight: number
   originCountry: string

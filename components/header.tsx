@@ -48,7 +48,7 @@ export default function Header() {
               من نحن
             </Link>
             <Link
-              href="/contact"
+              href="/#footer"
               className="text-sm font-medium transition-colors"
             >
               اتصل بنا
@@ -102,7 +102,7 @@ export default function Header() {
                   من نحن
                 </Link>
                 <Link
-                  href="/contact"
+                  href="/#footer"
                   className="text-base font-medium transition-colors py-2 mobile-nav-link"
                   onClick={() => setOpen(false)}
                 >
