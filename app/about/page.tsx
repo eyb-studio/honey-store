@@ -17,7 +17,7 @@ export default function AboutPage() {
           {/* Left side - Image */}
           <Card className="relative h-[500px]">
             <Image
-              src="/about-honey.jpg"
+              src="/4.jpg"
               alt="عسل الطبيعة"
               fill
               className="object-cover"

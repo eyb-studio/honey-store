@@ -44,7 +44,7 @@ export default function CartPage() {
   };
 
   const handleCheckout = () => {
-    const whatsappNumber = "971502597949"; // Replace with your actual WhatsApp number
+    const whatsappNumber = "971551555546";
     const message = formatWhatsAppMessage();
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
   };
